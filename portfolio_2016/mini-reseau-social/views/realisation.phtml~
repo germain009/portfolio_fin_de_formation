@@ -1,0 +1,9 @@
+
+<div id="outer-box">
+    <img class="image_projet" src="<?= $result->getImage() ?>">
+    <div id="inner-box">
+      <p><a class="href_projet" href="<?= $result->getTitre()?>/<?= $result->getTitre() ?>.html"><?= $result->getTitre() ?></a></p>
+    </div>
+  </div>
+
+

@@ -1,0 +1,175 @@
+*
+{
+ box-sizing:border-box;
+ 
+}
+
+.body{
+     background-color:#FFFACD;
+     }
+
+
+header ul li {
+              list-style:none;
+              display:inline-block;
+              
+}
+
+.pseudo_membre{
+               background-color:#FFFACD;
+               }
+
+.content{
+         min-height:350px;
+
+}
+.register{
+          text-align:center;
+         }
+.register label{
+            width:325px;
+            text-align:right;
+           
+}
+.login{
+       text-align:center;
+}
+.error{
+       color:red;
+       font-family:Impact;
+       }
+.pseudo_memre{
+               margin-left:86%;
+               
+              }
+.menu{
+      height:35px;
+      line-height:1.5em;
+      background-color:#ccffcc;
+      border:1px solid black;
+     }
+.menu ul li {
+             display:inline-block;
+             list-style:none;
+             line-height:36px;
+             border-left:1px solid black;
+            }
+.menu ul li a {
+               color:black;
+               text-decoration:none;
+               padding:25px;
+              }
+.nbr{
+                 color:orange;
+                 padding-left:5%;
+}
+
+.info{
+      width:20%;
+      
+}
+
+.info p strong{
+               text-decoration:underline;
+}
+.info p a{
+               color:red;
+              }
+.info p em{
+           color:#0000CD;
+}
+.update{
+        
+          text-align:center;
+         }
+.update label{
+            width:325px;
+            text-align:right;
+
+}
+
+.update_avatar{
+               margin-left:20%;
+}
+
+.membres{
+         width:325px;
+         display:inline-block;
+}
+
+.profil{
+        width:325px;
+
+}
+
+.profil p strong{
+               text-decoration:underline;
+              }
+.profil p em{
+           color:#0000CD;
+}
+.invitation{
+            width:250px;
+            display:inline-block;
+            background-color:white;
+            margin-top:10px;
+            margin-left:15px;
+           }
+.amis{
+            width:250px;
+            display:inline-block;
+            background-color:white;
+            margin-top:10px;
+            margin-left:15px;
+           }
+.invitations{
+
+             background-color:orange;
+             width:15px;
+             height:15px;
+             text-align:center;
+             border-radius:100px;
+             margin-left:51.5%;
+             margin-top:54px;
+             position:absolute;
+
+}
+
+.send{
+      display:inline-block;
+      
+}
+
+
+.sujet{
+        display:inline-block;
+        
+
+}
+
+.affiche_sujet{
+               display:none;
+}
+
+.send:hover .affiche_sujet{
+            display:block;
+}
+
+.messages_non_lus{
+                  width:20px;
+                  height:20px;
+                  background-color:lime;
+
+}
+.msgs{
+     margin-left:15px;
+     background-color:white;
+     text-align:center;
+     width:80%;
+}
+
+
+
+
+
+

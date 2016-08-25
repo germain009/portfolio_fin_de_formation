@@ -1,0 +1,12 @@
+
+<div class="home">
+<div class="author">
+<h1>TALEM</h1>
+<h1>Germain</h1>
+
+
+</div>
+<img class="image_head" src="public/images/work.jpg" alt="poste-de-travail"/>
+</div>
+
+<?php require('apps/aPropos.php'); ?>

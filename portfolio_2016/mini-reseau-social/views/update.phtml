@@ -1,0 +1,23 @@
+<h3>changez vos infos </h3>
+<div class="update">
+<div class="error"><?= $error ?></div>
+<form action="" method="POST">
+<label for="situation">Votre situation</label>
+<select name="situation">
+    <option value="Celibataire">Celibataire</option>
+    <option value="En couple">En couple</option>
+</select></br>
+<label for="email">Votre email : </label>
+<input type="text" value="<?= htmlentities($info->getEmail()) ?>" name="email" /></br>
+<label for="apropos">A propos de vous : </label> 
+<textarea rows="1" cols="18" name="apropos"><?= htmlentities($info->getApropos()) ?></textarea></br>
+
+
+<input type="submit" value="modifier" name="submit" />
+
+
+
+
+
+</form>
+</div>

@@ -1,0 +1,18 @@
+<h2 id="contact">contact</h2>
+<div class="contact">
+<form action="" method="POST">
+    <div class="inputs_form">
+    <p><label>nom<input class="nom" type="text" name="nom"/></p>
+    <p><label>mail<input class="email" type="email" name="email"/></p>
+    </div>
+    <div class="textarea_form">
+    <p><label>message<textarea class="message" name="message"></textarea></p>
+    </div>
+    <div class="submit">
+    <input class="input_submit" type="submit" name="btn" />
+    </div>
+
+
+
+</form>
+</div>

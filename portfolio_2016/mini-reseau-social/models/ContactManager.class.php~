@@ -1,0 +1,65 @@
+<?php
+class ContactManager
+{
+	private $link;
+	// les autorisations et certaines vérifs sont faites au traitement_user.php
+	//ci-dessous, le lien à la base de données via l'index
+	public function __construct($link)
+	{
+		$this->link = $link;
+	}
+	// dans le manager, on travaille en direct avec la BDD
+
+
+
+
+	
+	public function create($data)
+	{
+		$contact = new Contact($this->link);
+		// on va commencer à vérifier si les champs du formulaire de register sont Set:
+		if (!isset($data['nom'])) //n'est pas set
+		{
+			throw new Exception("Paramètre manquant:login"); //NB:VOIR TRAITEMENT!
+		}
+		
+		if (!isset($data['email']))
+		{
+			throw new Exception("Paramètre manquant: email");
+		}
+		//on vérifie que les deux password existent
+		if (!isset($data["message"]))
+		{
+			throw new Exception("Paramètre manquant: message");
+		}
+
+		
+
+		
+		//on "rentre dans l'objet"
+		//on "complète" l'objet user avec les paramètres qu'on a post
+		$contact->setNom($data['nom']);
+	        $contact->setEmail($data['email']);
+		$contact->setMessage($data['message']);
+		
+
+
+		// on va injecter en base de données:
+		//1) On redéfinit les variables en "getant" dans l'objet, avant de les envoyer en bdd
+		$nom= mysqli_real_escape_string($this->link,$contact->getNom());
+		$email= mysqli_real_escape_string($this->link,$contact->getEmail());
+		$message= mysqli_real_escape_string($this->link,$contact->getMessage());
+		
+		//2)On fait la requête:
+		$query="INSERT INTO contact (nom,email,message) 
+				VALUES ('".$nom."', '".$email."','".$message."')";
+		$res=mysqli_query($this->link,$query);
+		// on vérifie que la requête s'est bien exécutée:
+		if(!$res)
+		{
+			
+			throw new Exception("Erreur interne");
+			
+		}
+	}
+}

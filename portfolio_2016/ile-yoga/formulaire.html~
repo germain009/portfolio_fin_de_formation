@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>formulaire</title>
+        <meta charset="UTF-8" />
+        <link type="text/css" rel="stylesheet" href="form.css" />
+        <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+
+
+    </head>
+
+
+    <body>
+
+
+			<div class="container"/>
+			    <article class="head">
+			    
+				    	<img src="logo.png" alt="logo" />
+				    <nav>
+				    	<ul>
+				    	
+				    	    <li id="agenda" class="p"><a href="#">Agenda</a></li>
+				       
+				        
+				    	<li id="livre" class="p"><a href="#">Livre d'or</a></li>
+				    	
+				    	
+				    	<li id="album" class="p"><a href="#">Album Photo</a></li>
+				        
+				        
+				    	<li id="contacter" class="p"><a href="#">Nous contacter</a></li>
+				    	
+
+				    </nav>
+				</article>
+				<article class="body">
+					<h2>Réserver votre place pour le prochain cours de yoga du rire !
+					</h2>
+					<section class="section1">
+						<table  class="table1">
+							<thead class="th1">
+							</thead>
+							    <tr>
+							    	<th class="yoga_du_r" colspan="3">yogadu rire avec jacqueline(Paris)</th>
+							    </tr>
+							<tbody>
+								<tr>
+									<td>05 janvier 2016</td>
+									<td>15h30</td>
+									<td>reserver ce creneau</td>
+								</tr>
+								<tr>
+									<td>10 janvier 2016</td>
+									<td>16h30</td>
+									<td>reserver ce creneau</td>
+								</tr>
+								<tr>
+									<td>15 janvier 2016</td>
+									<td>15h30</td>
+									<td>reserver ce creneau</td>
+								</tr>
+								<tr>
+									<td>20 janvier 2016</td>
+									<td>16h30</td>
+									<td>reserver ce creneau</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section class="section2">
+						<table class="table1">
+							<thead class="th1">
+							</thead>
+							    <tr>
+							    	<th class="yoga_du_r" colspan="3">yogadu rire avec jacqueline(Paris)</th>
+							    </tr>
+							<tbody>
+								<tr>
+									<td>05 janvier 2016</td>
+									<td>15h30</td>
+									<td>reserver ce creneau</td>
+								</tr>
+								<tr>
+									<td>10 janvier 2016</td>
+									<td>16h30</td>
+									<td>reserver ce creneau</td>
+								</tr>
+								<tr>
+									<td>15 janvier 2016</td>
+									<td>15h30</td>
+									<td>reserver ce creneau</td>
+								</tr>
+								<tr>
+									<td>20 janvier 2016</td>
+									<td>16h30</td>
+									<td>reserver ce creneau</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section class="section3">
+						<h3>Pour valider votre réservation,completer ce formulaire:
+						</h3>
+						<div class="nom_prenom">
+							<p class="coordonees_hr">votre prenom</p>
+							<hr>
+						</div>
+						<div class="nom_prenom2">
+							<p class="coordonees_hr">votre nom</p>
+							<hr>
+						</div>
+						<div class="mail">
+							<p class="coordonees_hr">votre adresse mail</p>
+							<hr>
+						</div>
+					</section>
+					<section class="section4">
+						<h4>Quels sont les raisons de votre vanue ?</h4>
+						<div class="check">
+							<p class="case0"><input type="checkbox" name="box1[]" id="box1" /><label>Besoin de me détendre</label></p>
+							<p class="case"><input type="checkbox" name="box1[]" id="box1" /><label>Mon médecin m'a conseillé de venir</label></p>
+							<p class="case"><input type="checkbox" name="box1[]" id="box1" /><label>Je veux tester avec des amis</label></p>
+						</div>
+						<h4>Vouler-vous souscrire à notre programme de fidélité?
+						</h4>
+						<div class="radio0">
+							<p class="radio"><input type="radio" id="radio1"/><label>oui</label></p>
+							<p class="radio"><input type="radio" id="radio1"/><label>oui</label></p>
+						<h4>Comment avez-vous connu Omnibus ?
+						</h4>
+						<form action="#" method="#">
+							<input type="text" placeholder="Far internet" id="input" />
+							<input type="submit" id="submit" value="envoyer"/>
+							<a id="retour" href="ile-yoga.html">retour</a>
+						</form>
+
+
+						</form>
+					</section>
+					<footer>
+						<div class="foot0">
+							<p class="foot">Exercice "Formulaire & Tableau"</p>
+							<p class="foot">3WA-2015</p>
+						</div>
+
+					</footer>
+                </article>
+
+
+			</div>
+
+
+
+
+    
+
+</body>

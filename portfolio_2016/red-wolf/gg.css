@@ -1,0 +1,56 @@
+@media screen and (max-width: 500px){
+
+
+.container{
+           max-width:500px;
+           /*margin-left:35px;*/
+           }
+
+
+.section{
+
+         display:block;
+         width:100%;
+
+}
+
+.liens{
+
+      margin-top:0px;
+      display:inline-block;
+
+    }
+.li{
+
+    margin-top:35px;
+    list-style:none;
+    display:block;
+
+    }
+.a_foot{
+       font-size:0.7em;
+      }
+
+.section_fin{
+            width:70%;
+            margin-left:15%;
+             }
+
+#moto1{
+       display:block;
+         width:100%;
+
+}
+
+.fa_d{
+
+      display:block;
+      width:30%;
+      margin-left:35%;
+      }
+
+p{
+
+   font-size:0.7em;
+    }
+        

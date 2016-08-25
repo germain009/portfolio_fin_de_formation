@@ -1,0 +1,281 @@
+*{
+  box-sizing:border-box;
+  }
+
+.container{
+    max-width:1000px;
+    }
+
+/*    } 
+
+#caroussel figure {
+  position: relative; 
+  width: 200%;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  text-align: left;
+  animation: 4s slidy infinite;
+}  
+
+#caroussel figure img { width: 50%; height: auto; float: left; }  
+
+
+@keyframes slidy {
+  0% { left: 0%; }
+  50% { left: -100%;}
+  100% { left: -200%; }
+}*/
+
+.logo{
+    display:inline-block;
+      }
+
+.head{
+
+}
+
+.liens{
+    display:inline-block;
+    vertical-align:top;
+    margin-left:250px;
+    }
+
+.li{
+    display:inline-block;
+    margin-top:15px;
+    margin-right:25px;
+    }
+
+.a_head{
+    text-decoration:none;
+    color:red;
+    background-color:#F2F2F2;
+    }
+
+hr{
+   color:red;
+   height:5px;
+   background-color:#F45D54;
+   border-radius:15px;
+}
+
+
+
+/*.moto{
+    width:100%
+    }*/
+
+.section{
+    width:20%;
+    display:inline-block;
+    margin-left:4%;
+       }
+.moto_section{
+    width:100%
+      }
+
+
+.owl-nav{
+    text-align:center;
+}
+
+.owl-prev{
+        display:inline-block;
+        }
+
+.owl-next{
+        display:inline-block;
+        margin-left:15px;
+}
+
+.p{
+    margin-left:50px;
+    color:#F45D54;
+}
+.hr{
+   margin-left:25px;
+   color:red;
+
+   }
+
+#moto1{
+    margin-left:25px;
+    width:20%;
+    display:inline-block
+      }
+
+.dinosore{
+    color:#F45D54;
+}
+.dernier_a{
+    width:100%;
+    
+    }
+.item{
+  max-width:1000px;
+}
+
+.fa_d{
+    display:inline-block;
+      }
+ 
+.derniere_img{
+}
+
+.section_fin{
+
+    display:inline-block;
+    width:47%;
+    vertical-align:top;
+    margin-left:2%;
+
+    }
+
+.figure2{
+    margin:0;
+    }
+
+.owl-carousel{
+
+  max-width:1000px;
+}
+.item{
+
+    width:100%;
+  
+}
+
+
+
+
+.img_fin{
+    width:100%;
+    }
+
+footer{
+
+    background-color:purple;
+    height:250px;
+     }
+
+footer p {
+    color:white;
+    text-align:center;
+         }
+
+.ul_foot{
+    text-align:center;
+    }
+
+
+.a_foot{
+    color:white;
+    }
+
+i{
+    color:orange;
+
+    }
+
+.li_foot{
+    display:inline-block;
+    }
+.li_foot{
+    margin-left:25px;
+    }
+
+@media screen and (max-width: 500px){
+
+
+.container{
+           max-width:500px;
+           /*margin-left:35px;*/
+           }
+
+
+.section{
+
+         display:block;
+         width:100%;
+
+}
+
+
+
+
+.liens{
+
+      margin-top:0px;
+      display:inline-block;
+      margin-left:0px;
+      font-size:0.7em;
+
+    }
+
+
+   
+.li{
+
+    margin-top:35px;
+    list-style:none;
+    display:block;
+
+    }
+.a_foot{
+       font-size:0.5em;
+
+      }
+/*.dernier_a{
+      width:100%;
+
+}*/
+
+/*.section_fin{
+            width:100%;
+            margin-left:15%;
+            display:block;
+             }*/
+
+#moto1{
+       display:block;
+       width:100%;
+
+}
+
+.liens{
+  margin-top:-15px;
+}
+
+.section_fin{
+      width:100%;
+      margin-left:3%;
+
+}
+
+.logo{
+
+  width:50%;
+  height:40%;
+}
+
+.fa_d{
+
+      display:block;
+      width:30%;
+      margin-left:35%;
+      }
+
+.ul_foot{
+    margin-left:0.4%;
+    padding:0;
+    }
+
+footer p{
+
+   font-size:0.7em;
+    }
+        
+
+
+       

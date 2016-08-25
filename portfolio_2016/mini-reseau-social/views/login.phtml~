@@ -1,0 +1,15 @@
+<div class="login">
+<h1>Connection</h1>
+<div class="error"><?php echo $error ; ?></div>
+<form action="" method="POST">
+
+<p><label>pseudo<input type="text" name="pseudo" /></p>
+<p><label>password<input type="password" name="password" /></p>
+<p><input type="submit" value="connection" name="submit" /></p>
+
+
+
+</form>
+</div>
+
+<a href="index.php?page=register">creer un compte</a>

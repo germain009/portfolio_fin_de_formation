@@ -1,0 +1,30 @@
+
+<div class="register">
+<h1>Inscription</h1>
+<div class="error"><?php  echo $error;?></div>
+<form action="" method="POST">
+<label for="sexe">Sexe</label>
+<select name="sexe">
+    <option value="Homme">Homme</option>
+    <option value="Femme">Femme</option>
+</select></br>
+<label for="situation">Situation</label>
+<select name="situation">
+    <option value="Celibataire">Celibataire</option>
+    <option value="En couple">En couple</option>
+</select></br>
+<label for="pseudo">Votre pseudo : </label>
+<input type="text" name="pseudo" /></br>
+<label for="password">Votre password : </label>
+<input type="password" name="password" /></br>
+<label for="passwordBis">Confirmez le password : </label>
+<input type="password" name="passwordBis" /></br>
+<label for="email">Votre email : </label>
+<input type="text" name="email" /></br>
+<label for="apropos">A propos de vous : </label> 
+<textarea rows="1" cols="18" name="apropos"></textarea></br>
+
+
+<input type="submit" value="inscription" name="submit" />
+</div>
+

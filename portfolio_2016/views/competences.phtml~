@@ -1,0 +1,48 @@
+<h2 id="azerty" >competences</h2>
+<div class="competences">
+<div class="div_competences">
+<h3>integration</h3>
+<ul>
+<li>html</li>
+<li>css</li>
+<li>less</li>
+<li>bootstrap</li>
+<li>twig</li>
+</ul>
+</div>
+<div class="div_competences">
+<h3>IDE</h3>
+<ul>
+
+<li>sublimetext</li>
+<li>phpstorm</li>
+
+    
+  </ul>
+</div>
+<div class="div_competences">
+<h3>developpement</h3>
+<ul>
+
+<li>php</li>
+<li>javascript</li>
+<li>ajax</li>
+<li>nodejs</li>
+<li>angularjs</li>
+    
+  </ul>
+</div>
+<div class="div_competences">
+<h3>BDD</h3>
+<ul>
+<li>mysql</li>
+<li>pdo</li>
+<li>doctrine</li>
+<li>orm</li>
+
+    
+  </ul>
+</div>
+</div>
+
+<?php require('apps/contact.php'); ?>
