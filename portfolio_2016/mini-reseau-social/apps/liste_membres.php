@@ -1,8 +1,8 @@
 <?php
 
-if(isset($_SESSION))
+if(isset($_SESSION['pseudo']))
 {
-
+    //si la personne est connectée l'objet UserManager recupere tout les autres membre et leurs infos 
     $count = 0 ;
     $manager = new UserManager($link);
     $membres = $manager->getMembres();

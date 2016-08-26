@@ -146,7 +146,7 @@ class User
 
          $extension_valide = array('pdf', 'tif', 'bmp', 'jpg','png');
  
-         if ( in_array($path['extension'], $extension_valide))
+         if ( in_array($path['extension'], $extension_valide))//recupere l'extension pour la comparer
          {
              $this->avatar = $avatar ;
          }

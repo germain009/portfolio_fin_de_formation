@@ -1,11 +1,7 @@
 <div class="pseudo_membre">
-
-<p>Bonjour <?= htmlentities($info->getPseudo()) ?></p>
-
-<a href="index.php?page=logout">logout</a>
-
+    <p>Bonjour <?= htmlentities($info->getPseudo()) ?></p>
+    <a href="index.php?page=logout">logout</a>
 </div>
-
 <div class="menu">
     <ul>
         <li><a href="index.php?page=membre">Acceuil</a></li>
@@ -16,6 +12,4 @@
         <li><a href="index.php?page=messages">Messages</a></li>
         <li class="nbr"><?= $countAll ?> membres</li>
     </ul>
-
-
 </div>

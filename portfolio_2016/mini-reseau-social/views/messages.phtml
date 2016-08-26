@@ -1,20 +1,16 @@
 
 <div class="msgs">
-<p>Le <?= htmlentities($result->getDate()) ?></p>
-<p class="send"><?= htmlentities($result->getDe()); ?></p><div class="sujet"><p class="affiche_sujet"><?= htmlentities($result->getSujet()) ?></p></div>
-
+    <p>Le <?= htmlentities($result->getDate()) ?></p>
+    <p class="send"><?= htmlentities($result->getDe()); ?></p><div class="sujet">
+    <p class="affiche_sujet"><?= htmlentities($result->getSujet()) ?></p>
+</div>
 <div class="mess"><p><?= htmlentities($result->getMessage() )?></p>
-<a href="index.php?page=new_message&pseudo=<?= htmlentities($result->getDe()) ?>">Repondre</a>/<a href="index.php?page=messages&a=<?= htmlentities($result->getA()) ?>&date=<?= htmlentities($result->getDate()) ?>">Supprimer</a></br>
+    <a href="index.php?page=new_message&pseudo=<?= htmlentities($result->getDe()) ?>">Repondre
+    </a>/<a href="index.php?page=messages&a=<?= htmlentities($result->getA()) ?>&date=
+    <?= htmlentities($result->getDate()) ?>">Supprimer</a></br>
 </div>
 
-
-
-
-
-
-
-
-<script>
+<!--<script>
 
 var mess = document.querySelectorAll('.mess');
 var messL = mess.length;
@@ -43,4 +39,4 @@ for(i = 0 ; i < sendL ; i ++ )
 
 
 
-</script>
+</script>-->

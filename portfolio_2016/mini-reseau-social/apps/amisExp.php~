@@ -22,7 +22,7 @@ if(sizeof($invitations)  > 0  )
     }
     else
     {
-        echo   " verifiez votre liste d'invitations ";
+        echo   " vos demandes sont en attente ";
     }
     
     
