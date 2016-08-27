@@ -1,0 +1,42 @@
+*{
+    box-sizing:border-box
+ }
+
+ body{
+                        background-color:black;
+                    }
+                .container{
+                              margin-left:375px;
+                              background-color:black;
+                          }
+                #debut{
+                          color:white;
+                      }
+                .td{
+                        background-color:black;
+                        text-align:center;
+                   }
+                #infos{
+                          color:white;
+                      }
+                .grille{
+                            display:inline-block;
+                            border:1px solid black;
+                       }
+                
+                .score{ 
+                          display:inline-block;
+                          border:1px solid black;
+                      }
+                .croix{
+                          color:lime;
+                      }
+                .rond{
+                         color:orange;
+                     }
+                #score_croix{
+                                color:white;
+                            }
+                #score_rond{
+                                color:white;
+                            }
