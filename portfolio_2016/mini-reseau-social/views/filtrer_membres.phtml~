@@ -1,27 +1,26 @@
-<div class="register">
-    <h1>Inscription</h1>
-        <div class="error"><?php  echo $error;?></div>
-    <form action="" method="POST">
-        <label for="sexe">Sexe</label>
+<form action="index.php?page=membres_choisis" method="POST">
+Rechercher
         <select name="sexe">
             <option value="Homme">Homme</option>
             <option value="Femme">Femme</option>
-        </select></br>
-        <label for="situation">Situation</label>
-        <select name="situation">
-            <option value="Celibataire">Celibataire</option>
-            <option value="En couple">En couple</option>
-        </select></br>
-        <label for="age">Age</label>
-        <select name="age">
+        </select>entre
+        <select name="age1">
              <?php
              for ($i = 1 ; $i < 100 ; $i++)
              {
                  echo '<option value="' .$i. '">' .$i. ' ans</option>';
              }
              ?>
-        </select></br>
-        <label for="region">Region</label>
+        </select>et
+        <select name="age2">
+             <?php
+             for ($i = 1 ; $i < 100 ; $i++)
+             {
+                 echo '<option value="' .$i. '">' .$i. ' ans</option>';
+             }
+             ?>
+        </select>
+        <label for="Location">Location</label>
         <select style="width:150px"name="region">
             <option value="Alsace">Alsace</option>
             <option value="Aquitaine">Aquitaine</option>
@@ -50,20 +49,7 @@
             <option value="La-Reunion">La-Reunion</option>
             <option value="Martinique">Martinique</option>
             <option value="Mayotte">Mayotte</option>
-        </select></br>
-        <label for="pseudo">Ville : </label>
-        <input type="text" name="ville" /></br>
-        <label for="pseudo">Votre pseudo : </label>
-        <input type="text" name="pseudo" /></br>
-        <label for="password">Votre password : </label>
-        <input type="password" name="password" /></br>
-        <label for="passwordBis">Confirmez le password : </label>
-        <input type="password" name="passwordBis" /></br>
-        <label for="email">Votre email : </label>
-        <input type="text" name="email" /></br>
-        <label for="apropos">A propos de vous : </label> 
-        <textarea rows="1" cols="18" name="apropos"></textarea></br>
-        <input type="submit" value="inscription" name="submit" />
-    </form>
-</div>
-
+        </select>
+        
+<input type="submit" name="submit"/>
+</form>

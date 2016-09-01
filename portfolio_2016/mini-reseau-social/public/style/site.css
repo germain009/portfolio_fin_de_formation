@@ -94,7 +94,10 @@ header ul li {
 
 .membres{
          width:325px;
+         background-color:white;
          display:inline-block;
+         margin-left:25px;
+         margin-top:5px;
 }
 
 .profil{

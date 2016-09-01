@@ -24,8 +24,9 @@ if(isset($_POST['submit']))
             }
             else 
             {
-                $error = " votre password n'est pas valide " ;//si ce n'est pas le bon bassword
-            }
+                $error = " votre password n'est pas valide<br>
+                           Avez vous oublié votre<a href='index.php?page=reset_password'> password</a> " ;
+            }   //mauvais ou pass oublié
         }
     
 

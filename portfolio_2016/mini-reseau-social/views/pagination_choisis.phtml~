@@ -1,0 +1,1 @@
+<a href="index.php?page=membres_choisis&p-page=<?= $i + 1  ?> "><?= $i + 1  ?></a>-

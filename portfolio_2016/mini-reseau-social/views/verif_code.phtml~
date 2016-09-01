@@ -1,0 +1,7 @@
+
+<h2>entrez le code qui vous a ete envoye par mail a <?= $_SESSION['email']?></h2>
+<div class="error"><?= $error ?></div>
+<form action="#" method="POST">
+<input type="int" name="code"/>
+<input type="submit"  value="valider" name="submit_code"/>
+</form>

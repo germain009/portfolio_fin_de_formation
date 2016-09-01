@@ -5,11 +5,15 @@ class User
 	private $id;
 	private $sexe;
 	private $situation;
+        private $age;
+        private $region;
+        private $ville;
 	private $pseudo;
         private $password;
         private $email;
         private $apropos;
         private $avatar;
+        
        
 	
 	private $link;
@@ -33,6 +37,18 @@ class User
 	public function getSituation()
 	{
 		return $this->situation;
+	}
+        public function getAge()
+	{
+		return $this->age;
+	}
+        public function getRegion()
+	{
+		return $this->region;
+	}
+        public function getVille()
+	{
+		return $this->ville;
 	}
 	public function getPseudo()
 	{
@@ -85,6 +101,32 @@ class User
 		
 		
 		$this->situation = $situation;
+	}
+        public function setAge($age)
+	{
+		
+		
+		$this->age = $age;
+	}
+        public function setRegion($region)
+	{
+		
+		
+		$this->region = $region;
+	}
+        public function setVille($ville)
+        {
+            
+		if (strlen($ville)<2)
+		{
+			throw new Exception("Ville trop court (<2)");
+		}
+		else if (strlen($pseudo)>95)
+		{
+			throw new Exception("Ville trop long (>90)");
+		}
+	
+		$this->ville = $ville;
 	}
 
         public function setPseudo($pseudo)

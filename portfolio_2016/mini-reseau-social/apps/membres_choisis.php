@@ -1,0 +1,55 @@
+
+<?php
+
+if(isset($_SESSION['pseudo']))
+{
+      
+if(isset($_POST['submit']))
+    {
+      
+
+        //variables de la requette
+        $sexe = $_POST['sexe'];
+        $age_min = $_POST['age1'];
+        $age_max = $_POST['age2'];
+        $region = $_POST['region'];
+        //si la personne est connectée l'objet UserManager recupere tout les autres membre et leurs infos 
+	$count = 0 ;
+	$manager = new UserManager($link);
+        if(isset($_GET['p-page']) && ($_GET['p-page'] > 0) /*&& ($_GET['p-page'] <= $total_pages)*/)
+	{
+            $p_page = $_GET['p-page'];
+	}
+	else
+	{
+            $p_page = 1 ;
+	}
+        $par_pages = 9;
+        $count_membres = $manager->getMembres_choisis($sexe,$age_min,$age_max,$region,$p_page,$par_pages);
+	//definir le nombre de pages pour la requette (2etapes ceil??)
+	$calcule_pages = sizeof($count_membres) / 9;
+	$total_pages = ceil($calcule_pages);
+        
+	    
+	
+	//variable page deinit par get et limitée 
+	
+	//variab les pour la pagination
+        //la requette avec parametres de limit 
+        $membres = $manager->getMembres_choisis($sexe,$age_min,$age_max,$region,$p_page,$par_pages);
+        $nombre_membres = sizeof($membres);
+        /*$nombre_pages = ceil($nombre_membres/$par_pages);*/
+        while($count < $nombre_membres)
+	{
+	   $result = $membres[$count];
+           require('views/liste_membres.phtml');
+           $count ++ ;
+	}
+        for($i = 0 ; $i < $total_pages   ; $i ++ )
+        {
+            require('views/pagination_choisis.phtml');
+        }
+        
+}	
+    
+}
