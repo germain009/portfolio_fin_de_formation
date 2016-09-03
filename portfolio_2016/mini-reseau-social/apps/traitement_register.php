@@ -24,10 +24,25 @@ if (isset($_POST['submit']))
         {
             $user = $manager->create($_POST);//si tout est ok create enregistre les données(POST) dans la table //users 
             $pseudo = $_POST['pseudo'];
-            mkdir("public/images/".$pseudo);      
-		
-	    header('Location:index.php?page=login') ;
-            exit;
+            mkdir("public/images/".$pseudo); 
+            $old = umask(0);
+            chmod("public/images/".$pseudo,0777);
+            umask($old);
+            if ($old != umask()) 
+            {
+            echo 'Une erreur est survenue lors de la modification des droits';
+            }
+                $sexe = $_POST['sexe'];
+                if($sexe == 'Homme')
+                {
+                    copy("public/images/default_h.jpg","public/images/".$pseudo."/default.jpg");
+                }
+                elseif($sexe == 'Femme')
+                {
+                    copy("public/images/default_f.jpg","public/images/".$pseudo."/default.jpg");
+                }
+                header('Location:index.php?page=login') ;
+                exit;
         }
     }
     catch (Exception $e)

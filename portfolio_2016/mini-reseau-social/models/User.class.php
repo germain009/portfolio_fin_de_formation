@@ -128,7 +128,7 @@ class User
 		{
 			throw new Exception("Ville trop court (<2)");
 		}
-		else if (strlen($pseudo)>95)
+		else if (strlen($ville)>95)
 		{
 			throw new Exception("Ville trop long (>90)");
 		}
