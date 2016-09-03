@@ -1,4 +1,4 @@
-<div class="photos_delete"><img src="public/images/<?= htmlentities($result->getPhoto()) ?>" alt="<?= htmlentities($result->getPhoto())?>"
+<div class="photos_delete"><img src="public/images/<?= htmlentities($result->getPseudo()) ?>/<?= htmlentities($result->getPhoto()) ?>" alt="<?= htmlentities($result->getPhoto())?>"
      style="width:150px;height:150px"/>
 <a href="index.php?page=supprimer_photo&id=<?= $result->getId() ?>&pseudo=<?=$result->getPseudo()?>">supprimer</a>
 </div>

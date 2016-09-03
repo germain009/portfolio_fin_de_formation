@@ -2,7 +2,7 @@
 <div style="word-wrap: break-word" class="profil">
     <p style="background-color:white;margin-top:5px;width:200px;text-align:center" >
     <a href="index.php?page=new_message&pseudo=<?= htmlentities($infos->getPseudo()) ?>">Envoyer un message</a></p>
-    <img src="public/images/<?= htmlentities($infos->getAvatar()) ?>" alt="avatar"
+    <img src="public/images/<?= htmlentities($infos->getPseudo()) ?>/<?= htmlentities($infos->getAvatar()) ?>" alt="avatar"
      style="width:150px;height:150px"/>
     <p><strong>Email</strong>:<em><?= htmlentities($infos->getEmail()) ?></em></p>
     <p><strong>Sexe</strong>:<em><?= htmlentities($infos->getSexe()) ?></em></p>

@@ -22,7 +22,9 @@ if (isset($_POST['submit']))
         }
         else
         {
-            $user = $manager->create($_POST);//si tout est ok create enregistre les données(POST) dans la table users
+            $user = $manager->create($_POST);//si tout est ok create enregistre les données(POST) dans la table //users 
+            $pseudo = $_POST['pseudo'];
+            mkdir("public/images/".$pseudo);      
 		
 	    header('Location:index.php?page=login') ;
             exit;

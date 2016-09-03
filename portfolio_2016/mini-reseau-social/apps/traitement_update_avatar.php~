@@ -2,7 +2,8 @@
 
 if(isset($_POST['submit']))
 {
-    $uploaddir = 'public/images/';//le fichier ou sera stocké l'immage
+    $pseudo = $_SESSION['pseudo'];
+    $uploaddir = 'public/images/'.$pseudo.'/';//le fichier ou sera stocké l'immage
     $uploadfile = $uploaddir . basename($_FILES['avatar']['name']);//recupere le nom du fichier
     if (move_uploaded_file($_FILES['avatar']['tmp_name'], $uploadfile)) //s l'expression est true (s'il y a un fichier)
     {

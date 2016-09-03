@@ -192,6 +192,12 @@ header ul li {
         width:65%;       
 }
 
+.photos_delete{
+              display:inline-block;
+              margin-top:15px;
+              background-color:black;
+}
+
 
 
 

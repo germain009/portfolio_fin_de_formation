@@ -1,6 +1,6 @@
 <div class="update_avatar">
     <h3>Changez votre avatar</h3>
-    <img src="public/images/<?= htmlentities($info->getAvatar()) ?>" alt="avatar"
+    <img src="public/images/<?= htmlentities($info->getPseudo()) ?>/<?= htmlentities($info->getAvatar()) ?>" alt="avatar"
      style="width:150px;height:150px"/>
         <div class="error"><?= $error ?></div>
         <form enctype="multipart/form-data" action="" method="POST">
