@@ -7,4 +7,6 @@
     <p><strong>Situation</strong>:<em><?= htmlentities($info->getSituation()) ?></em></p>
     <p><strong>A propos</strong>:<em><?= htmlentities($info->getApropos()) ?></em></p>
 </div>
-   
+<?php 
+require('apps/div_carousel.php');
+?>

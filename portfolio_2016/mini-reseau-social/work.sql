@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Sep 01, 2016 at 04:57 
+-- Generation Time: Sep 03, 2016 at 03:58 
 -- Server version: 10.1.13-MariaDB
 -- PHP Version: 5.6.23
 
@@ -36,6 +36,13 @@ CREATE TABLE `amis` (
   `active` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Dumping data for table `amis`
+--
+
+INSERT INTO `amis` (`id_invitation`, `pseudo_exp`, `pseudo_dest`, `date_invitation`, `date_confirmation`, `date_vue`, `active`) VALUES
+(1, 'azerty', 'azerty2', '2016-09-03 01:40:43', '2016-09-03 01:40:57', '2016-09-03 01:41:13', 1);
+
 -- --------------------------------------------------------
 
 --
@@ -55,6 +62,26 @@ CREATE TABLE `messages` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `photos`
+--
+
+CREATE TABLE `photos` (
+  `id` int(11) NOT NULL,
+  `pseudo` varchar(50) NOT NULL,
+  `photo` varchar(175) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `photos`
+--
+
+INSERT INTO `photos` (`id`, `pseudo`, `photo`) VALUES
+(1, '11111', '1.png'),
+(2, '123789', '2.png');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `recuperation`
 --
 
@@ -64,6 +91,13 @@ CREATE TABLE `recuperation` (
   `code` int(11) NOT NULL,
   `valide` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `recuperation`
+--
+
+INSERT INTO `recuperation` (`id`, `email`, `code`, `valide`) VALUES
+(8, 'toto@toto.fr', 13454797, 0);
 
 -- --------------------------------------------------------
 
@@ -90,7 +124,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `sexe`, `situation`, `age`, `region`, `ville`, `pseudo`, `password`, `email`, `apropos`, `avatar`) VALUES
-(42, 'Homme', 'Celibataire', 1, 'Alsace', 'strasbourg', 'azerty', '$2y$08$cq9IKoc0YAE9cFSF9AeLzuliR.1UatzACZdRYnvrYF00J8rZdvNtS', 'toto@toto.fr', 'ddddddddd', 'default.jpg'),
+(42, 'Homme', 'Celibataire', 1, 'Alsace', 'strasbourg', 'azerty', '$2y$08$cq9IKoc0YAE9cFSF9AeLzuliR.1UatzACZdRYnvrYF00J8rZdvNtS', 'toto@toto.fr', 'ddddddddd', 'vignette.png'),
 (43, 'Homme', 'Celibataire', 1, 'Alsace', 'strasbourg', 'azerty1', '$2y$08$lCIDq07LjgVi3sZ6cn.2MuI8k52jWCFiXC.3l2cOruaq8YrUbwvOC', 'titi@toto.fr', 'ssssddsdddd', 'default.jpg'),
 (44, 'Homme', 'Celibataire', 1, 'Alsace', 'strasbourg', 'azerty2', '$2y$08$KNpXcdb0ayO1cBtcuke2DuKNgXJUSLUqsjMb.OA9htdMZS9gpcRmK', 'toto@titi.fr', 'dddfdfddf', 'default.jpg');
 
@@ -108,6 +142,12 @@ ALTER TABLE `amis`
 -- Indexes for table `messages`
 --
 ALTER TABLE `messages`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `photos`
+--
+ALTER TABLE `photos`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -130,17 +170,22 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `amis`
 --
 ALTER TABLE `amis`
-  MODIFY `id_invitation` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_invitation` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `messages`
 --
 ALTER TABLE `messages`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `photos`
+--
+ALTER TABLE `photos`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 --
 -- AUTO_INCREMENT for table `recuperation`
 --
 ALTER TABLE `recuperation`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 --
 -- AUTO_INCREMENT for table `users`
 --

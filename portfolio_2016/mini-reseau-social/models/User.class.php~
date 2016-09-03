@@ -13,6 +13,7 @@ class User
         private $email;
         private $apropos;
         private $avatar;
+        private $photos;
         
        
 	
@@ -70,6 +71,12 @@ class User
 	{
 		return $this->avatar;
 	}
+        public function getPhotos()
+        {
+            $manager = new PhotoManager($this->link);
+            $list = $manager->getByPseudo($this->pseudo);
+            return $list;
+        }
         
 
 

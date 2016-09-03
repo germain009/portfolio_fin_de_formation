@@ -66,6 +66,8 @@ header ul li {
 
 .info{
       width:20%;
+      display:inline-block;
+      
       
 }
 
@@ -101,7 +103,9 @@ header ul li {
 }
 
 .profil{
-        width:325px;
+        width:20%;
+        display:inline-block;
+        
 
 }
 
@@ -169,6 +173,23 @@ header ul li {
      background-color:white;
      text-align:center;
      width:80%;
+}
+.photos_persos{
+              display:inline-block;
+}
+
+
+.item img{
+      width:75px;
+      display:block;
+            
+}
+.photos{
+        display:inline-block;
+        vertical-align:top;
+        margin-top:5px;
+        margin-left:7%;
+        width:65%;       
 }
 
 

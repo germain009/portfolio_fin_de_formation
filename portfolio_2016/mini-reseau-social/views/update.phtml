@@ -14,3 +14,14 @@
                 <input type="submit" value="modifier" name="submit" />
             </form>
     </div>
+    <h3>Ajouter une photo</h3>
+    <div class="ajouter_photos">
+    <div class="error"><?= $error2 ?></div>
+        <form enctype="multipart/form-data" action="" method="POST">
+            <input name="photo" type="file" />
+            <input type="submit" value="Envoyer le fichier"name="submit_photo" />
+        </form>
+
+    </div>
+    <h3>Supprimer une photo</h3>
+    <a href="index.php?page=supprimer_photo&pseudo=<?= htmlentities($info->getPseudo()) ?>">Voir les photos</a>

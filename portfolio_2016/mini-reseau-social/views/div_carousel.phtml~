@@ -1,0 +1,7 @@
+<div class="photos">
+<div class="owl-carousel">
+<?php 
+require('apps/photos_membres.php');
+?>
+</div>
+</div>
