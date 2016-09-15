@@ -1,0 +1,1 @@
+<a href="index.php?page=test&invit=no&pseudo=<?= htmlentities($invit_refuse->getPseudoDest()) ?>"><p><?= htmlentities($invit_refuse->getPseudoDest()) ?> a refusé votre invitation</p></a>

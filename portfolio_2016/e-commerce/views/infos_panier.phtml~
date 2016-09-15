@@ -1,0 +1,3 @@
+<div class="infos_panier">
+<?= $result.' '.'produits'.' '.$total.' '.'€'?>
+</div>

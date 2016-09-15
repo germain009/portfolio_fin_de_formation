@@ -1,0 +1,14 @@
+<?php
+
+        $manager = new ProductManager($link);
+        $products = $manager->get2Derniers();
+        $count = 0 ; 
+        while($count < sizeof($products))
+        {
+            $result = $products[$count];
+            require('views/affiche_sidebar.phtml');
+            $count ++ ;
+        }
+    
+
+?>

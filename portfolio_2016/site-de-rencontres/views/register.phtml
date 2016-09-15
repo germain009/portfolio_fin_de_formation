@@ -1,0 +1,70 @@
+<div class="register">
+    <h1>Inscription</h1>
+        <div class="error"><?php  echo $error;?></div>
+    <form action="" method="POST">
+        <label for="sexe">Sexe</label>
+        <select name="sexe">
+            <option value="Homme">Homme</option>
+            <option value="Femme">Femme</option>
+        </select></br>
+        <label for="situation">Situation</label>
+        <select name="situation">
+            <option value="Celibataire">Celibataire</option>
+            <option value="En couple">En couple</option>
+        </select></br>
+        <label for="age">Age</label>
+        <select name="age">
+             <?php
+             for ($i = 1 ; $i < 100 ; $i++)
+             {
+                 echo '<option value="' .$i. '">' .$i. ' ans</option>';
+             }
+             ?>
+        </select></br>
+        <label for="region">Region</label>
+        <select style="width:150px"name="region">
+            <option value="...">...</option>
+            <option value="Alsace">Alsace</option>
+            <option value="Aquitaine">Aquitaine</option>
+            <option value="Auvergne">Auvergne</option>
+            <option value="Basse-Normandie">Basse-Normandie</option>
+            <option value="Bourgogne">Bourgogne</option>
+            <option value="Bretagne">Bretagne</option>
+            <option value="Centre">Centre</option>
+            <option value="Champagne-Ardenne">Champagne-Ardenne</option>
+            <option value="Corse">Corse</option>
+            <option value="Franche-Comté">Franche-Comté</option>
+            <option value="Haute-Normandie">Haute-Normandie</option>
+            <option value="Ile-de-France">Ile-de-France</option>
+            <option value="Languedoc-Roussillon">Languedoc-Roussillon</option>
+            <option value="Limousin">Limousin</option>
+            <option value="Loraine">Loraine</option>
+            <option value="Midi-Pyrénées">Midi-Pyrénées</option>
+            <option value="Nord-Pas-de-Calais">Nord-Pas-de-Calais</option>
+            <option value="Pays-de-la-Loire">Pays-de-la-loire</option>
+            <option value="Picardie">Picardie</option>
+            <option value="Poitou-Charentes">Poitous-Charentes</option>
+            <option value="Provence-Alpes-Cote-d'Azur">Provence-Alpes-Cote-d'Azur</option>
+            <option value="Rhone-Alpes">Rhone-Alpes</option>
+            <option value="Guadeloupe">Guadeloupe</option>
+            <option value="Guyane">Guyane</option>
+            <option value="La-Reunion">La-Reunion</option>
+            <option value="Martinique">Martinique</option>
+            <option value="Mayotte">Mayotte</option>
+        </select></br>
+        <label for="pseudo">Ville : </label>
+        <input type="text" name="ville" /></br>
+        <label for="pseudo">Votre pseudo : </label>
+        <input type="text" name="pseudo" /></br>
+        <label for="password">Votre password : </label>
+        <input type="password" name="password" /></br>
+        <label for="passwordBis">Confirmez le password : </label>
+        <input type="password" name="passwordBis" /></br>
+        <label for="email">Votre email : </label>
+        <input type="text" name="email" /></br>
+        <label for="apropos">A propos de vous : </label> 
+        <textarea rows="1" cols="18" name="apropos"></textarea></br>
+        <input type="submit" value="inscription" name="submit" />
+    </form>
+</div>
+

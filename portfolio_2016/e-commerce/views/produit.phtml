@@ -1,0 +1,7 @@
+<div class="produit">
+<p><?= htmlentities($produit->getTitre()) ?></p>
+<img class="img_prod"src="public/images/<?= htmlentities($produit->getImg()) ?>" alt="<?= htmlentities($produit->getImg()) ?>"/>
+<p><?= $description ?></p>
+<p><?= htmlentities($produit->getPrix()) ?>  €</p>
+<a href="index.php?page=panier&id=<?= htmlentities($produit->getId())?>&qte=1">Ajouter au panier</a>  
+</div>

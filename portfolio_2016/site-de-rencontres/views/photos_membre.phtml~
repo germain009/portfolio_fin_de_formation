@@ -1,0 +1,3 @@
+<div>rrrr
+<p><?= $result->getPhotos() ?></p>
+</div>

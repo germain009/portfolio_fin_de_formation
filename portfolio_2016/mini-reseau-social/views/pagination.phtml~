@@ -1,3 +1,0 @@
-<a href="index.php?page=liste_membres&p-page=<?= $i + 1  ?> "><?= $i + 1  ?></a>-
-
-

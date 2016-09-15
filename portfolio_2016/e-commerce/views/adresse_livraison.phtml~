@@ -1,0 +1,18 @@
+<div class="adresse_livraison">
+    <h1>Adresse pour la livraison</h1>
+        <div class="error"><?php  echo $error;?></div>
+    <form action="" method="POST">
+        <label for="pseudo">Votre nom : </label>
+        <input type="text" name="nom" /></br>
+        <label for="pseudo">Votre prenom : </label>
+        <input type="text" name="prenom" /></br>
+        <label for="pseudo">Votre adresse : </label>
+        <input type="text" name="adresse" /></br>
+        <label for="pseudo">Votre code postal : </label>
+        <input type="text" name="code_postal" /></br>
+        <label for="pseudo">Votre ville : </label>
+        <input type="text" name="ville" /></br>
+        <input type="submit" value="inscription" name="submit_adresse" />
+    </form>
+</div>
+

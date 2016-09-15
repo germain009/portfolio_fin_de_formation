@@ -1,0 +1,5 @@
+<div class="pagination_messages">
+<?php
+    require('apps/pagination_messages_result.php');
+?>
+</div>

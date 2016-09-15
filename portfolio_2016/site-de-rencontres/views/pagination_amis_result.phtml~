@@ -1,0 +1,2 @@
+
+<a href="index.php?page=amisUser&p-page=<?= $i + 1 ?>" ><?= $i + 1  ?></a>

@@ -1,0 +1,33 @@
+<p>action admin</p>
+<div class="product_admin">
+<p><?= $error ?></p>
+<form enctype="multipart/form-data" action="#" method="POST">
+<label>Titre</label><input type="text" name="titre"/><br>
+<label>Description</label><textarea name="description"></textarea><br>
+<label>Prix</label><input type="int" name="prix"/><br>
+<label>Stock</label><input type="int" name="stock"/><br>
+<input name="image" type="file" /><br>
+<label>Category</label><select name="id_category">
+                       <?php
+                           require('apps/option_category.php');
+                       ?>
+                       </select><br>
+<label>Sous category</label><select name="id_sous_category">
+                       <?php
+                           require('apps/option_sous_category.php');
+                       ?>
+                       </select><br>
+<label>Poids</label><select name="poids">
+                       <?php
+                           require('apps/option_poids.php');
+                       ?>
+                       </select><a href="index.php?page=les_poids">modif table</a><br>
+<label>Tva</label><select name="tva">
+                       <?php
+                           require('apps/option_tva.php');
+                       ?>
+                       </select><br/>
+<input type="submit" name="creer"/>
+</form>
+</diV>
+

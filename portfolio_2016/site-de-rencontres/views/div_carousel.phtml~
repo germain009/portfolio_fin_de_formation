@@ -1,0 +1,8 @@
+<div class="photos">
+<div class="foto_head">
+<?php 
+require('apps/photos_membres.php');
+?>
+</div>
+</div>
+<hr class="hr">

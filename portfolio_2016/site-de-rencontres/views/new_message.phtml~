@@ -1,0 +1,13 @@
+<div class="new_message">
+<h3>Envoyer message</h3>
+<div class="error" ><?= $error ?></div>
+<form action="" method="POST"/>
+    <input type="hidden" value="<?= htmlentities($_GET['pseudo'])?>" name="a"/></br>
+    <input type="hidden" value="<?= htmlentities($_SESSION['pseudo'])?>" name="de"/></br>
+    <label for="sujet">sujet</label>
+    <input type="text" name="sujet" /></br>
+    <label for="message">message</label>
+    <textarea name="message"></textarea></br>
+    <input type="submit" name="submit"/>
+</form>
+</div>

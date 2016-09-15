@@ -19,5 +19,7 @@ $count ++ ;
 }
 
 require('apps/mini_reseau.php');
+require('apps/e-commerce.php');
+
 
  ?>

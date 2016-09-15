@@ -1,0 +1,32 @@
+<?php
+class Realisation
+{
+	private $id;
+	private $titre;
+	private $image;
+
+	private $link;
+
+	
+
+	public function __construct($link){
+
+		$this ->link = $link;
+	}
+
+	public function getId()
+	{
+		return $this->id;
+	}
+	public function getTitre()
+	{
+		return $this->titre;
+	}
+	public function getImage()
+	{
+		return $this->image;
+	}
+
+      
+}
+?>

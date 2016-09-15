@@ -1,0 +1,26 @@
+<div class="info">
+    <img class="img_avatar"src="public/images/<?= htmlentities($info->getPseudo()) ?>/<?= htmlentities($info->getAvatar()) ?>" alt="avatar"
+     style="width:150px;height:150px"/>
+     <div class="options">
+        <ul>
+            <li><a href="index.php?page=messages">mes messages</a></li>
+            <li><a href="index.php?page=invitation">mes invitations</a></li>
+            <li><a href="index.php?page=amisUser">mes amis</a></li>
+            <li><a href="index.php?page=update">mes infos</a></li>
+            <li><a href="index.php?page=liste_membres">les membres</a></li>
+            <li><a href="index.php?page=filtrer_membres">rechercher</a></li>
+           
+        </ul>
+    </div>
+    
+    
+</div>
+<div class="bonjour"><p>Bonjour <?= $_SESSION['pseudo']?> il y a <?= $countAll?> membres dont<a href="index.php?page=les_connectes"> <?= $countAllConnecte ?> en ligne</a></p><a href="index.php?page=logout">deconnection</a></div>
+
+<?php 
+require('apps/div_carousel.php');
+?>
+
+<script>
+
+</script>

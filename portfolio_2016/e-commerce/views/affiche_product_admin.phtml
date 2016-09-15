@@ -1,0 +1,7 @@
+<div class="product_admin">
+<p><?= htmlentities($result->getTitre()) ?></p>
+<img class="img_prod"src="public/images/<?= htmlentities($result->getImg()) ?>" alt="<?= htmlentities($result->getImg()) ?>"/>
+<p><?= $description ?> ...</p>
+<p><?= htmlentities($result->getPrix()) ?>  €</p>
+<a href="index.php?page=modifier_article&id=<?= htmlentities($result->getId()) ?>">Modifier</a>  <a href="index.php?page=supprimer_article&supprimer=ok&id=<?= htmlentities($result->getId()) ?>">Supprimer</a>
+</div>

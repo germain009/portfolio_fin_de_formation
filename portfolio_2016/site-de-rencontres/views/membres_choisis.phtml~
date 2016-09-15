@@ -1,0 +1,10 @@
+<div class="info">
+    <p><a href="index.php?page=update_avatar">Changer votre avatar</a></p>
+    <img src="public/images/<?= htmlentities($info->getPseudo()) ?>/<?= htmlentities($info->getAvatar()) ?>" alt="avatar"
+     style="width:150px;height:150px"/>
+    <p><strong>Sexe</strong>:<em><?= htmlentities($info->getSexe()) ?></em></p>
+    <p><strong>Age</strong>:<em><?= htmlentities($info->getAge()) ?> ans</em></p>
+    <p><strong>Situation</strong>:<em><?= htmlentities($info->getSituation()) ?></em></p>
+    <p><strong>A propos</strong>:<em><?= htmlentities($info->getApropos()) ?></em></p>
+</div>
+   

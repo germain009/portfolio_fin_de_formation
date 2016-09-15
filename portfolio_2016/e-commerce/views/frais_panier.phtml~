@@ -1,0 +1,12 @@
+<tr>
+   <td colspan="2">Frais de port
+   </td>
+   <td colspan="2">Total frais de port
+   </td>
+</tr>
+<tr>
+   <td colspan="2"><?= $frais_de_port ?> €
+   </td>
+   <td colspan="2"><?= $total ?> €
+   </td>
+</tr>

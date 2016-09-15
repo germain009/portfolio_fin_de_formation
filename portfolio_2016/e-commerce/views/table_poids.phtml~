@@ -1,0 +1,7 @@
+<form action="#" method="POST">
+<label>Poid</label><input value="<?=htmlentities($result->getPoid())?>" name="poid"/>
+<label>Prix</label><input value="<?=htmlentities($result->getPrix())?>" name="prix"/>
+<input type="submit" value="modifier" name="modifier"/>
+
+</form>
+<a href="index.php?page=les_poids">retour</a>

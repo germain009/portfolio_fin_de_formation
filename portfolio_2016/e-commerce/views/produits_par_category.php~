@@ -1,0 +1,18 @@
+<?php
+
+if(isset($_GET['category']))
+{
+    $id_category = $_GET['category'];
+    var_dump($id_category);
+    /*$manager = new ProductManager($link);
+    $products = $manager->getByCategory(3);
+    var_dump($products);
+    $count = 0 ; 
+    while($count < sizeof($products))
+    {
+        $result = $products[$count];
+        require('views/produits_par_category.phtml');
+        $count ++ ;
+    }*/
+}
+?>

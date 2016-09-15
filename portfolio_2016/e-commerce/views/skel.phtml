@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>titre</title>
+        <!--<link type="text/css" rel="stylesheet" href="public/style/reset.css"/>-->
+        <link type="text/css" rel="stylesheet" href="public/style/site.css"/>
+        
+       
+     
+    <head>
+        <body>
+          
+                
+
+    <?php 
+
+if(isset($_SESSION['pseudo']) &&  ($_SESSION['pseudo'] == 'admin'))
+{
+    require('apps/header_admin.php');
+    
+
+}
+elseif(isset($_SESSION['pseudo']))
+{
+    require('apps/header_membre.php');
+  
+}
+else
+{
+    require('apps/header.php');
+    
+}
+    
+    require('apps/content.php');
+    
+    require('apps/footer.php');
+    ?>
+
+
+    
+
+                
+           
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        
+    
+    
+
+
+
+        </script>
+    </body>
+
+</html>

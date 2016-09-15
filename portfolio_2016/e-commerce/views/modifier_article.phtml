@@ -1,0 +1,32 @@
+<p>action admin</p>
+<div class="product_admin">
+<p><?= $error ?></p>
+<form enctype="multipart/form-data" action="#" method="POST">
+<label>Titre</label><input type="text" value="<?= htmlentities($modifier->getTitre())?>"name="titre"/><br>
+<label>Description</label><textarea  name="description"><?= htmlentities($modifier->getDescription())?></textarea><br>
+<label>Prix</label><input type="int" value="<?= htmlentities($modifier->getPrix())?>" name="prix"/><br>
+<label>Stock</label><input type="int" value="<?= htmlentities($modifier->getStock())?>" name="stock"/><br>
+<input  type="file" name="image"/><br>
+<label>Category</label><select name="id_category">
+                       <?php
+                           require('apps/option_category.php');
+                       ?>
+                       </select><br>
+<label>Sous category</label><select name="id_sous_category">
+                       <?php
+                           require('apps/option_sous_category.php');
+                       ?>
+                       </select><br>
+<label>Poids</label><select name="poids">
+                       <?php
+                           require('apps/option_poids.php');
+                       ?>
+                       </select><a href="index.php?page=les_poids">modif table</a><br>
+<label>Tva</label><select name="tva">
+                       <?php
+                           require('apps/option_tva.php');
+                       ?>
+                       </select><br>
+<input type="submit" name="modifier"/>
+</form>
+</diV>

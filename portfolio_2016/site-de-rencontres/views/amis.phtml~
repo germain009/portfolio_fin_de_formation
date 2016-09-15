@@ -1,0 +1,8 @@
+
+<div class="amis">
+<div class="error"><?= $error ?></div>
+<p><a href="index.php?page=profil&pseudo=<?= $result->getPseudoExp() ?>"><?= $result->getPseudoExp() ?></a></p>
+<img style="width:100px;height:100px"src="public/images/<?= $expediteur->getAvatar() ?>" />
+
+
+</div>

@@ -1,0 +1,3 @@
+<div class="item_2"><img class="img" src="public/images/<?= htmlentities($result->getPseudo()) ?>/<?= htmlentities($result->getPhoto()) ?>" alt="<?= htmlentities($result->getPhoto())?>"
+     style=""/></div>
+

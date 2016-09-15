@@ -1,0 +1,17 @@
+<div class="panier">
+    <table>
+        <tr>
+            <td>Produit</td>
+            <td>Prix</td>
+            <td>Quantitée</td>
+            <td>Tva</td>
+            <td>Total tva</td>
+            <td></td>
+        </tr>
+        <?= require('apps/visu_panier.php');?>
+        <?= require('apps/total_panier.php');?>
+        <?= require('apps/frais_panier.php');?>
+
+    </table>
+    <a href="index.php?page=infos_livraison">Regler la commande</a>
+</div>

@@ -1,0 +1,8 @@
+
+<div class="sidebar">
+<p>derniers articles</p>
+<?php
+   require('apps/affiche_sidebar.php');
+?>
+<br class="flow"></br>
+</div>

@@ -1,0 +1,2 @@
+<h3>L'adresse de livraison est elle votre adresse</h3>
+<a href="index.php?page=facture&livraison=oui"><h4>OUI</h4></a>   <a href="index.php?page=adresse_livraison">NON,je souhaite renseigner une autre addresse</a>

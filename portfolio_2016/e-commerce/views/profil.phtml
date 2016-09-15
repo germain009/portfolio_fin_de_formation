@@ -1,0 +1,12 @@
+<div class="error"><?= $error ?></div>
+<div style="word-wrap: break-word" class="profil">
+    <img src="public/images/<?= htmlentities($infos->getPseudo()) ?>/<?= htmlentities($infos->getAvatar()) ?>" alt="avatar"
+     style="width:150px;height:150px"/>
+    <p><strong>Sexe</strong>:<em><?= htmlentities($infos->getSexe()) ?></em></p>
+    <p><strong>Situation</strong>:<em><?= htmlentities($infos->getSituation()) ?></em></p>
+    <p><strong>A propos</strong>:<em><?= htmlentities($infos->getApropos()) ?></em></p>
+    <a href="index.php?page=supprimer_ami&info1=<?= htmlentities($infos->getPseudo()) ?>&info2=<?= htmlentities($_SESSION['pseudo']) ?>">Supprimer de la liste d'amis</a>
+</div>
+<?php 
+require('apps/div_carousel_2.php');
+?>

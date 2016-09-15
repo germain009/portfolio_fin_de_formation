@@ -1,0 +1,13 @@
+<tr>
+<form action="" method="POST">
+<td><?= $result->getTitre() ?></td>
+<td><?= $result->getPrix() ?> €</td>
+<td><input type="number"class="qte_modif"  name="qte_modif" value="<?= $quantite ?>"/>
+    <input type="hidden" name="id" value="<?= $result->getId() ?>"/></td>
+<td><?= $result->getTva() ?> %</td>
+<td><?= $total ?> €</td>
+<td><a href="index.php?page=panier&id=<?= $result->getId() ?>&action=supprimer">Supprimer</td>
+<td><input type="submit" value="update"/></td>
+</form>
+</tr>
+

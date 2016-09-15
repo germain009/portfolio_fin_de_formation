@@ -1,0 +1,15 @@
+<?php
+if(isset($_SESSION['pseudo']) && ($_SESSION['pseudo'] == 'admin'))
+    {
+        $manager = new ProductManager($link);
+        $products = $manager->get2Derniers();
+        $count = 0 ; 
+        while($count < sizeof($products))
+        {
+            $result = $products[$count];
+            require('views/sidrbar.phtml');
+            $count ++ ;
+        }
+    }
+
+?>

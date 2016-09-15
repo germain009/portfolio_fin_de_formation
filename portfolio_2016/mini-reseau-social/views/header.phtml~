@@ -1,6 +1,0 @@
-<header style="background-color:#ccffcc">
-    <ul class="menu_site">
-        <li><a href="index.php?page=login">login</a></li>
-        <li><a href="index.php?page=logout">logout</a></li>
-    </ul>
-</header>

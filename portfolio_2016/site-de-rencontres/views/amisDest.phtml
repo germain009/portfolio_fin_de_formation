@@ -1,0 +1,10 @@
+<div class="amis">
+<div class="error"><?= $error ?></div>
+<p><a href="index.php?page=profil&pseudo=<?= htmlentities($amis->getPseudo()) ?>"><?= htmlentities($amis->getPseudo()) ?></a></p>
+<img style="width:100px;height:100px;display:inline-block"src="public/images/<?= htmlentities($amis->getPseudo()) ?>/<?= htmlentities($amis->getAvatar())?>" />
+<div style="display:inline-block;text-align:center;vertical-align:top;margin-left:10%;width:40%;word-wrap: break-word">
+<p>infos :</p><p><?= substr(htmlentities($amis->getApropos()), 0, 25) ?></p><p>...</p></div>
+
+
+</div>
+

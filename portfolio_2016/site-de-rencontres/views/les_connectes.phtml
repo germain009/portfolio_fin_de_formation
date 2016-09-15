@@ -1,0 +1,7 @@
+<div class="membres">
+    <a href="index.php?page=profil&pseudo=<?= htmlentities($result->getPseudo()) ?>">
+    <img src="public/images/<?= htmlentities($result->getPseudo()) ?>/<?= htmlentities($result->getAvatar()) ?>" alt="avatar"
+     style="width:150px;height:150px"/></a>
+    <p><a href="index.php?page=profil&pseudo=<?= htmlentities($result->getPseudo()) ?>"><?= htmlentities($result->getPseudo())?> <?= htmlentities($result->getAge())?> ans<br> de <?= substr(htmlentities($result->getVille()),0,21)?></a></p>
+</div>
+

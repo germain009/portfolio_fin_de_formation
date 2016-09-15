@@ -1,0 +1,177 @@
+*
+{
+ box-sizing:border-box;
+ 
+}
+
+body{
+background-color:#FFF8DC;
+}
+.container{
+           max-width:900px;
+           background-color:#FFD700;
+}
+.infos_panier{
+              display:inline-block;
+              position:absolute;
+              margin-left:50%;
+              margin-bottom:-3%;
+}
+header{
+       /*display:inline-block;*/
+}
+.menu_site{
+         
+           background-color:#7B68EE;
+           
+}
+a{
+  text-decoration:none;
+  color:#9ACD32;
+}
+.menu_site li{
+              list-style:none;
+              display:inline-block;
+              border:1px solid #F0E68C;
+}
+.menu_site li:hover{
+              
+              background-color:#9ACD32;
+}
+.menu_site a{
+             color:white;
+             text-decoration:none;
+}
+
+/*
+.menu_site li{
+              display:inline-block;
+              margin-top:10px;
+              
+              
+}
+
+.menu_site li a{
+                
+                border-right:5px solid orange;
+                background-color:black;
+                color:white;
+                padding:10px;
+                color:yellow;
+}
+
+.menu_site li a:hover{
+                      background-color:#00feff;
+}
+.flow{
+      clear : both;
+      display : block;
+      height : 0;
+      overflow : hidden;
+}*/
+.sidebar{
+         background-color:lime;
+         
+         width:25%;
+         margin-right:50px;
+         /*margin-left:50px;*/
+         border:1px solid black;
+         margin-bottom:50px;
+         
+
+}
+.sidebar p{
+           text-align:center;
+}
+.category a{
+            padding:2%;
+            color:#7B68EE;
+            text-decoration:none;
+}
+.category{
+          display:inline-block;
+          width:40%;
+          padding:4%;
+          margin-top:2%;
+          margin-left:2%;
+          background-color:#F8F8FF;
+          text-align:center;
+}
+.sous_category a{
+            padding:2%;
+            color:#7B68EE;
+            text-decoration:none;
+}
+.sous_category{
+          display:inline-block;
+          width:40%;
+          padding:4%;
+          margin-top:2%;
+          margin-left:2%;
+          background-color:#F8F8FF;
+          text-align:center;
+}
+.product_admin{
+              display:inline-block;
+              background-color:#F8F8FF;
+              margin-top:2%;
+              vertical-align:top;
+              text-align:center;
+              width:25%;
+}
+
+.produit{
+         width:65%;
+         margin-left:25%;
+}
+
+.product_sidebar{
+              border:1px solid black;
+              vertical-align:top;
+              width:75%;
+}
+.img_prod{
+          width:100px;
+          height:100px;
+}
+.les_poids{
+           display:inline-block;
+           width:15%;
+}
+.panier{
+        margin-left:5%;
+        width:50%;
+}
+.panier table tr td{
+                    width:15%;
+                    border:1px solid black;
+                    text-align:center;
+}
+.qte_modif{
+           width:50%;
+}
+.facture{
+         text-align:center;
+}
+.adresse_livraison{
+                   width:35%;
+                   display:inline-block;
+                   margin-left:5%;
+}
+.simulation_payement{
+                     width:40%;
+                     display:inline-block;
+                     margin-left:5%;      
+}
+
+label{
+      text-align:right;
+      display:inline-block;
+      width:200px;
+}
+
+footer{
+       color:white;
+       background-color:#7B68EE;
+}
+

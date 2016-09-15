@@ -1,0 +1,9 @@
+<div class="invitation">
+    <div class="error"><?= $error ?></div>
+    <p><?= htmlentities($result->getPseudoExp()) ?></p>
+    <img style="width:100px;height:100px"src="public/images/<?= htmlentities($expediteur->getPseudo()) ?>/<?= htmlentities($expediteur->getAvatar()) ?>" />
+    <a href="index.php?page=accepter&info1=<?= htmlentities($result->getPseudoExp()) ?>
+             &info2=<?= htmlentities($result->getPseudoDest()) ?>">Accepter</a>
+    <a href="index.php?page=refuser&info1=<?= htmlentities($result->getPseudoExp()) ?>
+             &info2=<?= htmlentities($result->getPseudoDest()) ?>">Refuser</a>
+</div>

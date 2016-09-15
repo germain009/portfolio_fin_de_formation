@@ -1,0 +1,1 @@
+<a href="index.php?page=test&invit=ok"><p><?= htmlentities($invit->getPseudoDest()) ?> a accepté votre invitation</p></a>

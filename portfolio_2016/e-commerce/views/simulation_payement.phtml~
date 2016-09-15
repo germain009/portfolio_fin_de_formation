@@ -1,0 +1,8 @@
+<div class="simulation_payement">
+<div class="error"><?= $error ?></div>
+<form action="#" method="POST">
+<label>8 numeros</label><input type="password" name="8_num" /><br/>
+<label>4 numeros</label><input type="password" name="4_num" /><br/>
+<input type="submit" value="valider" name="submit_payement"/>
+</form>
+</div>

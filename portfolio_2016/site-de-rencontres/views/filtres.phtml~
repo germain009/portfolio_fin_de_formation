@@ -1,0 +1,55 @@
+<form action="" method="POST">
+Rechercher
+        <select name="sexe">
+            <option value="Homme">Homme</option>
+            <option value="Femme">Femme</option>
+        </select>entre
+        <select name="age1">
+             <?php
+             for ($i = 1 ; $i < 100 ; $i++)
+             {
+                 echo '<option value="' .$i. '">' .$i. ' ans</option>';
+             }
+             ?>
+        </select>et
+        <select name="age2">
+             <?php
+             for ($i = 1 ; $i < 100 ; $i++)
+             {
+                 echo '<option value="' .$i. '">' .$i. ' ans</option>';
+             }
+             ?>
+        </select>
+        <label for="Location">Location</label>
+        <select style="width:150px"name="region">
+            <option value="Alsace">Alsace</option>
+            <option value="Aquitaine">Aquitaine</option>
+            <option value="Auvergne">Auvergne</option>
+            <option value="Basse-Normandie">Basse-Normandie</option>
+            <option value="Bourgogne">Bourgogne</option>
+            <option value="Bretagne">Bretagne</option>
+            <option value="Centre">Centre</option>
+            <option value="Champagne-Ardenne">Champagne-Ardenne</option>
+            <option value="Corse">Corse</option>
+            <option value="Franche-Comté">Franche-Comté</option>
+            <option value="Haute-Normandie">Haute-Normandie</option>
+            <option value="Ile-de-France">Ile-de-France</option>
+            <option value="Languedoc-Roussillon">Languedoc-Roussillon</option>
+            <option value="Limousin">Limousin</option>
+            <option value="Loraine">Loraine</option>
+            <option value="Midi-Pyrénées">Midi-Pyrénées</option>
+            <option value="Nord-Pas-de-Calais">Nord-Pas-de-Calais</option>
+            <option value="Pays-de-la-Loire">Pays-de-la-loire</option>
+            <option value="Picardie">Picardie</option>
+            <option value="Poitou-Charentes">Poitous-Charentes</option>
+            <option value="Provence-Alpes-Cote-d'Azur">Provence-Alpes-Cote-d'Azur</option>
+            <option value="Rhone-Alpes">Rhone-Alpes</option>
+            <option value="Guadeloupe">Guadeloupe</option>
+            <option value="Guyane">Guyane</option>
+            <option value="La-Reunion">La-Reunion</option>
+            <option value="Martinique">Martinique</option>
+            <option value="Mayotte">Mayotte</option>
+        </select>
+        
+<input type="submit" name="submit"/>
+</form>

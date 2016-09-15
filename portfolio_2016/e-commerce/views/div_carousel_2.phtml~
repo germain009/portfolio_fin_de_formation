@@ -1,0 +1,10 @@
+<div class="photos_2">
+<div class="owl-carousel">
+<?php 
+require('apps/photos_membres_2.php');
+?>
+</div>
+</div>
+<?php
+require('apps/new_message.php');
+?>

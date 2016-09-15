@@ -1,0 +1,384 @@
+*
+{
+ box-sizing:border-box;
+ 
+}
+
+.body{
+     background-color:#DCDCDC;
+     }
+header{
+       background-color:#A9A9A9;
+}
+
+header ul li {
+              list-style:none;
+              display:inline-block;
+              
+}
+.membre{
+               background-color:#A9A9A9;
+}
+.bonjour{
+         
+         display:inline-block;
+         vertical-align:top;
+         margin-left:20%;
+        
+}
+
+.totaux_membres{
+                display:inline-block;
+}
+.logout{
+        display:inline-block;
+}
+.membres_recherche{
+		   width:175px;
+                   margin-bottom:15px;
+		   background-color:white;
+		   display:inline-block;
+                   border-radius:25px;
+		   margin-left:25px;
+                   text-align:center;
+                   
+		 
+}
+
+.pseudo_membre{
+               background-color:#DCDCDC;
+               }
+
+.content{
+         min-height:450px;
+
+}
+
+.img_avatar{
+  
+          display:inline-block;
+}
+.options{
+         display:inline-block;
+         vertical-align:top;
+}
+
+.options li{
+           list-style:none;
+}
+
+.register{
+          text-align:center;
+         }
+.register label{
+            width:325px;
+            text-align:right;
+           
+}
+.login{
+       text-align:center;
+}
+.error{
+       color:red;
+       font-family:Impact;
+       }
+.pseudo_memre{
+               margin-left:86%;
+               
+              }
+.menu{
+      height:35px;
+      line-height:1.5em;
+      background-color:#DCDCDC;
+      border-bottom:1px solid black;
+     }
+.menu ul li {
+             display:inline-block;
+             list-style:none;
+             line-height:36px;
+             border-left:1px solid black;
+            }
+.menu ul li a {
+               color:black;
+               text-decoration:none;
+               padding:25px;
+              }
+.nbr{
+                 color:orange;
+                 padding-left:5%;
+}
+
+.info{
+      width:30%;
+      display:inline-block;
+      margin-top:5px;
+      
+      
+}
+.item_head{
+           display:inline-block;
+}
+
+.info p strong{
+               text-decoration:underline;
+}
+.info p a{
+               color:red;
+              }
+.info p em{
+           color:#0000CD;
+}
+
+.hr{
+   border:2px solid white;
+   margin-top:-0.01%;
+}
+.update{
+        
+          
+          
+         }
+.update label{
+            width:130px;
+            text-align:right;
+
+}
+
+.update_avatar{
+               display:inline-block;
+}
+.ajouter_photos{
+                display:inline-block;
+}
+
+.membres{
+         width:225px;
+         background-color:white;
+         display:inline-block;
+         padding:2px;
+         margin-right:25px;
+         margin-top:5px;
+         border:1px solid black;
+}
+
+.profil{
+        width:20%;
+        display:inline-block;
+        margin-top:5px;
+        
+
+}
+
+.profil p strong{
+               text-decoration:underline;
+              }
+.profil p em{
+           color:#0000CD;
+}
+.invitation{
+            width:250px;
+            display:inline-block;
+            background-color:white;
+            margin-top:10px;
+            margin-left:15px;
+           }
+.amis{
+            width:250px;
+            display:inline-block;
+            background-color:white;
+            margin-top:10px;
+            margin-left:15px;
+           }
+.invitations{
+
+             background-color:lime;
+             width:15px;
+             height:15px;
+             text-align:center;
+             border-radius:100px;
+             margin-left:22.5%;
+             margin-top:2%;
+             position:absolute;
+
+}
+.new_message{
+             display:inline-block;
+             border: 1px solid black;
+             margin-left:375px;
+             margin-top:-125px;
+}
+
+/*.send{
+      display:inline-block;
+      
+}
+
+
+.sujet{
+        display:inline-block;
+        
+
+}
+
+.affiche_sujet{
+               display:none;
+}*/
+
+
+.messages_non_lus{
+                  width:20px;
+                  height:20px;
+                  background-color:lime;
+
+}
+.msgs{
+     margin-left:15px;
+     background-color:white;
+     text-align:center;
+     display:inline-block;
+     margin-top:15px;
+     border:1px solid black;
+     width:80%;
+     
+}
+.photos_persos{
+              display:inline-block;
+}
+
+
+/*.item img{
+      width:175px;
+      display:block;
+            
+}*/
+
+
+.photos{
+        display:inline-block;
+        vertical-align:top;
+        margin-top:5%;
+        margin-left:-45%;
+        width:35%;       
+}
+.photos_2{
+          display:inline-block;
+          vertical-align:top;
+          margin-top:1%;
+          width:65%; 
+              
+
+}
+
+/*.item_2 {
+            width:75px;
+            height:75px;
+}
+  */ 
+
+
+.photos_delete{
+              display:inline-block;
+              margin-top:15px;
+              background-color:black;
+}
+
+.connecte{
+            display:inline-block;
+            height:10px;
+            width:21px;
+            font-size:0.5rem;
+            background-color:lime;
+            vertical-align:top;
+            margin-left:-95px;
+            margin-top:15px;
+            position:absolute;
+      
+          
+}
+ 
+.deconnecte{
+            display:inline-block;
+            height:10px;
+            width:21px;
+            font-size:0.5rem;
+            background-color:red;
+            vertical-align:top;
+            margin-left:-95px;
+            margin-top:15px;
+            position:absolute;
+      
+}
+
+
+.img{
+            width:150px;
+            height:150px;
+            border:1px solid black;
+            padding:1px;
+}
+
+.message_vert{
+              height:5px;
+              width:5px;
+              border-radius:100px;
+              background-color:lime;
+              display:inline-block;
+}
+.message_rouge{
+               height:10px;
+               width:10px;
+               border-radius:100px;
+               background-color:red;
+               display:inline-block;
+               
+}
+.messages_non_vues{
+                   height:15px;
+                   width:15px;
+                   margin-left:22.5%;
+                   position:absolute;
+                   text-align:center;
+                   border-radius:100px;
+                   background-color:lime;
+}
+.pagination_div{
+                text-align:center;
+               
+}
+.pagination_amis{
+                 text-align:center;
+}
+.owl-nav{
+         text-align:center;
+}
+.owl-prev{
+          display:inline-block;
+          margin-right:2px;
+}
+.owl-next{
+          display:inline-block;
+          
+}
+.owl-carousel_2{
+                
+               
+                
+}
+.pagination_messages{
+                     text-align:center;
+}
+.pagination_choisis{
+                    text-align:center;               
+}
+.pagination{
+            display:inline-block;
+}
+
+footer{
+       height:25px;
+       background-color:#A9A9A9;
+}
+
+
+
+
