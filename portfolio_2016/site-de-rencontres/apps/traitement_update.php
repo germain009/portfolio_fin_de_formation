@@ -96,17 +96,17 @@ if(isset($_POST['submit_avatar']))
 		        $error3 = $e->getMessage();
 		    }
         }
+        else 
+        {
+            $error3 =  "vous n'avez pas coisi de fichier ";
+        }
     }
     else
     {
-        $error3 = "mauvais format fichier";
+        $error3 = "Veuillez selectionner un fichier image";
     }
 }
-else 
-{
-    $error3 =  "vous n'avez pas coisi de fichier ";
 
-}
 
 
 ?>
