@@ -21,7 +21,7 @@ $link = mysqli_connect($localhost, $login, $pass, $database);
                     'supprimer_article','boutique','produits_par_sous_category',
                     'produit','table_poids','les_poids','panier','sous_category',
                     'infos_livraison','facture','adresse_livraison',
-                    'succes_transaction');
+                    'succes_transaction','historique_commandes');
     if (isset($_GET['page']))
     {
 	if (in_array($_GET['page'], $access))

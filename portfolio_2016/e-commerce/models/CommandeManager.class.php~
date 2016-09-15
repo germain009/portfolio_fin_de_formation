@@ -30,6 +30,20 @@ class CommandeManager
 	    $user=mysqli_fetch_object($res,"Commande", [$this->link]);
 	    return $user;
         }
+        public function getHistoriqueByIdUser($id_user)
+	{
+            $list = [];
+            $id_user=mysqli_real_escape_string($this->link,$id_user);
+	    $query="SELECT * FROM commandes 
+                    WHERE id_user='".$id_user."'
+                    AND reglee = 1 ";
+	    $res=mysqli_query($this->link,$query);
+	    while($commande=mysqli_fetch_object($res,"Commande", [$this->link]))
+            {
+            $list [] = $commande;
+	    return $list;
+            }
+        }
         
 
         public function create($id_user,$id_produits,$nbr_produits)

@@ -1,0 +1,5 @@
+<p><?= $user->getNom() ?></p>
+<p><?= $user->getPrenom() ?></p>
+<p><?= $user->getAdresse() ?></p>
+<p><?= $user->getCodePostal() ?></p>
+<p><?= $user->getVille() ?></p>
