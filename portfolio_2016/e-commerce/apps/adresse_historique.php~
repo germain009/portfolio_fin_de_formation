@@ -7,6 +7,6 @@
     }
     else
     {
-    require('views/adresse_norm.phtml');
+    require('views/adresse_liv_norm.phtml');
     }
 ?>

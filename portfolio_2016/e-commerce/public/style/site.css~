@@ -163,7 +163,22 @@ a{
                      display:inline-block;
                      margin-left:5%;      
 }
-
+.historique{
+            width:35%;
+            display:inline-block;
+}
+.total_historique{
+                  width:35%;
+                  display:inline-block;
+}
+.total_commande_tva{
+                    width:30%;
+                    display:inline-block;
+}
+.adresse_commande{
+                  width:30%;
+                  display:inline-block;
+}
 label{
       text-align:right;
       display:inline-block;

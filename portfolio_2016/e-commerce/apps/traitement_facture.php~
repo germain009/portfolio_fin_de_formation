@@ -1,9 +1,9 @@
 <?php
 
 
-	if(isset($_GET['livraison']) && !isset($_POST))
+	if(isset($_GET['livraison']) && !isset($_POST['submit_payement']))
 	{
-            
+                //creer une commande
 		$manager = new UserManager($link);
 		$user = $manager->getByPseudo($_SESSION['pseudo']);
 		$id_user = $user->getId();

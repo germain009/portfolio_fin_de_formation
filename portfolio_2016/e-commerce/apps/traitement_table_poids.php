@@ -1,7 +1,7 @@
 <?php
-if(isset($_POST['modifier']) && $_GET['poid'])
+if(isset($_POST['modifier']))
 {
-    $poid = $_GET['poid'];
+    $poid = $_POST['poid'];
     $prix =$_POST['prix'];
     $manager = new PoidManager($link);
     $modifier = $manager->getByPoid($poid);
