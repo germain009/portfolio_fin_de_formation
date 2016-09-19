@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Sep 03, 2016 at 03:58 
--- Server version: 10.1.13-MariaDB
--- PHP Version: 5.6.23
+-- Generation Time: Sep 19, 2016 at 11:28 
+-- Server version: 10.1.16-MariaDB
+-- PHP Version: 5.6.24
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -33,15 +33,9 @@ CREATE TABLE `amis` (
   `date_invitation` datetime NOT NULL,
   `date_confirmation` datetime NOT NULL,
   `date_vue` datetime NOT NULL,
-  `active` int(11) NOT NULL
+  `active` int(11) NOT NULL,
+  `refuse` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `amis`
---
-
-INSERT INTO `amis` (`id_invitation`, `pseudo_exp`, `pseudo_dest`, `date_invitation`, `date_confirmation`, `date_vue`, `active`) VALUES
-(1, 'azerty', 'azerty2', '2016-09-03 01:40:43', '2016-09-03 01:40:57', '2016-09-03 01:41:13', 1);
 
 -- --------------------------------------------------------
 
@@ -70,14 +64,6 @@ CREATE TABLE `photos` (
   `pseudo` varchar(50) NOT NULL,
   `photo` varchar(175) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `photos`
---
-
-INSERT INTO `photos` (`id`, `pseudo`, `photo`) VALUES
-(1, '11111', '1.png'),
-(2, '123789', '2.png');
 
 -- --------------------------------------------------------
 
@@ -116,17 +102,25 @@ CREATE TABLE `users` (
   `password` varchar(255) NOT NULL,
   `email` varchar(150) NOT NULL,
   `apropos` varchar(500) NOT NULL,
-  `avatar` varchar(100) NOT NULL
+  `avatar` varchar(100) NOT NULL,
+  `connecte` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `sexe`, `situation`, `age`, `region`, `ville`, `pseudo`, `password`, `email`, `apropos`, `avatar`) VALUES
-(42, 'Homme', 'Celibataire', 1, 'Alsace', 'strasbourg', 'azerty', '$2y$08$cq9IKoc0YAE9cFSF9AeLzuliR.1UatzACZdRYnvrYF00J8rZdvNtS', 'toto@toto.fr', 'ddddddddd', 'vignette.png'),
-(43, 'Homme', 'Celibataire', 1, 'Alsace', 'strasbourg', 'azerty1', '$2y$08$lCIDq07LjgVi3sZ6cn.2MuI8k52jWCFiXC.3l2cOruaq8YrUbwvOC', 'titi@toto.fr', 'ssssddsdddd', 'default.jpg'),
-(44, 'Homme', 'Celibataire', 1, 'Alsace', 'strasbourg', 'azerty2', '$2y$08$KNpXcdb0ayO1cBtcuke2DuKNgXJUSLUqsjMb.OA9htdMZS9gpcRmK', 'toto@titi.fr', 'dddfdfddf', 'default.jpg');
+INSERT INTO `users` (`id`, `sexe`, `situation`, `age`, `region`, `ville`, `pseudo`, `password`, `email`, `apropos`, `avatar`, `connecte`) VALUES
+(1, 'Homme', 'Celibataire', 1, 'Alsace', 'ville test', 'azerty1', '$2y$08$TTSFwDA0QXcibIjKoKjkIeTygfxS//OXbDA7ohdweZb9vliNYUuii', 'toto@toto.fr', '..........................................................................................................................', 'default.jpg', 0),
+(2, 'Homme', 'Celibataire', 15, '...', 'ville test', 'azerty2', '$2y$08$98wuA.4rq./80z6WCFAr.e8AwKXsZRHGL4Fc2OCE0wNp/S/lVJ2Zi', 'titi@toto.fr', '.....................................................................................', 'default.jpg', 1),
+(3, 'Femme', 'Celibataire', 33, 'Languedoc-Roussillon', 'ville test', 'azerty3', '$2y$08$At.6EVmBUGtVUTJwH8hzjOeAUdGG4jz3aUHi3MkaUiuPvDEU3sMC6', 'tuto@toto.fr', '......................................................................................', 'default.jpg', 0),
+(4, 'Homme', 'Celibataire', 28, 'Aquitaine', 'ville test', 'azerty4', '$2y$08$riJpGBw7XHHcg3THmgFxPuj2eNFRr8Z.U7AfDFdI2siTyqKHpnpzm', 'reksdixnres@gmail.com', '......................................................................................', 'default.jpg', 1),
+(5, 'Femme', 'Celibataire', 19, 'Centre', 'ville test', 'azerty5', '$2y$08$jfvkx9WGAXJVKsbE04DR6OqhMAZ7gGghsTaNK9U5JNE0SntYSF14y', 'titu@toto.fr', '..........................................................................................................................', 'default.jpg', 0),
+(6, 'Femme', 'Celibataire', 35, '...', 'ville test', 'azerty6', '$2y$08$4P.5GtjC.ON42MD/C9ClD.JzcRwGHN46m9DmzIKeVU42mCtERkVl.', 'reas@gmail.com', '.......................................................................................................', 'default.jpg', 1),
+(7, 'Homme', 'Celibataire', 46, 'Centre', 'ville test', 'azerty7', '$2y$08$vgb1xu4TLNn9PU2Q339gMOX.wTCZv8f9Wplna9GVOofX2mSuH2SK6', 'totio@toto.fr', '.......................................................................................', 'default.jpg', 0),
+(8, 'Homme', 'Celibataire', 36, 'Loraine', 'ville test', 'azerty8', '$2y$08$3VUXYuPEPmOQY0xDxVmDe.jQawF20kCqeVqW9hEkMKip5cPvzVDWG', 'toato@toto.fr', '......................................................................................................................', 'default.jpg', 1),
+(9, 'Homme', 'Celibataire', 1, '...', 'ville test', 'azerty9', '$2y$08$3X7qW9EtyxMIgs0vBg82feNLyjaj27kg9MgaccYo0G4DU12ARK2j2', 'tata@toto.fr', '....................................................................................', 'default.jpg', 0),
+(10, 'Femme', 'Celibataire', 25, 'Corse', 'ville test', 'azerty10', '$2y$08$uFxl/toOGNLgJNZveKM3VOt9cVK6KrEqCDYycMe77UI/evsVWc.ha', 'tita@toto.fr', '..................................................................................................', 'default.jpg', 0);
 
 --
 -- Indexes for dumped tables
@@ -180,7 +174,7 @@ ALTER TABLE `messages`
 -- AUTO_INCREMENT for table `photos`
 --
 ALTER TABLE `photos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `recuperation`
 --
@@ -190,7 +184,7 @@ ALTER TABLE `recuperation`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
