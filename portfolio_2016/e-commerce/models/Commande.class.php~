@@ -3,6 +3,7 @@ class Commande
 {
 	//propriétés
 	private $id;
+        private $date;
 	private $id_user;
         private $id_produits;
         private $nbr_produits;
@@ -23,6 +24,10 @@ class Commande
 	public function getId()
 	{
 		return $this->id;
+	}
+        public function getDate()
+	{
+		return $this->date;
 	}
 	public function getIdUser()
 	{
@@ -62,7 +67,10 @@ class Commande
 
 	
 
-	
+        public function setDate($date)
+        {	
+		$this->date = $date;
+	}	
         public function setIdUser($id_user)
         {	
 		$this->id_user = $id_user;

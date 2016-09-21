@@ -153,26 +153,62 @@ a{
 .facture{
          text-align:center;
 }
-.adresse_livraison{
-                   width:35%;
+.adresse_commande{
+                  
                    display:inline-block;
+                   vertical-align:top;
                    margin-left:5%;
+                  
 }
+.livre_a{
+         
+         display:inline-block;
+        
+}
+.adresse_livre_a{
+      
+         display:inline-block;
+         border-left:1px solid black;
+         margin-left:2%;
+}
+.a{
+    display:inline-block;
+    
+}
+.nom_prenom_a{
+               display:inline-block;
+               vertical-align:top;
+}
+.adresse_a{
+           display:inline-block;
+           vertical-align:top;
+              
+}
+.infos_adresse_a{
+                 display:inline-block;
+                 vertical-align:top;
+                
+}
+
 .simulation_payement{
                      width:40%;
                      display:inline-block;
                      margin-left:5%;      
 }
 .historique{
-            width:35%;
-            display:inline-block;
+            /*width:35%;
+            display:inline-block;*/
+}
+.div_infos_historique{
+                      display:inline-block;
+                      width:25%;
 }
 .total_historique{
                   width:35%;
                   display:inline-block;
 }
 .total_commande_tva{
-                    width:30%;
+                    width:35%;
                     display:inline-block;
 }
 .adresse_commande{

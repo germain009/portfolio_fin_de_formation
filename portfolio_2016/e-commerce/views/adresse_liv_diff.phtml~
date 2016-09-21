@@ -1,6 +1,19 @@
-
-<p><?= $adresse->getNom() ?></p>
-<p><?= $adresse->getPrenom() ?></p>
-<p><?= $adresse->getAdresse() ?></p>
-<p><?= $adresse->getCodePostal() ?></p>
-<p><?= $adresse->getVille() ?></p>
+<div class="livre_a">
+    <div class="a">
+    Livré à : 
+    </div>
+    <div class="nom_prenom_a">
+        <p><?= $user->getNom() ?></p>
+        <p><?= $user->getPrenom() ?></p>
+    </div>
+</div>
+<div class="adresse_livre_a">
+    <div class="adresse_a">
+    Adresse :
+    </div>
+    <div class="infos_adresse_a">
+        <p><?= $user->getAdresse() ?></p>
+        <p><?= $user->getCodePostal() ?></p>
+        <p><?= $user->getVille() ?></p>
+    </div>
+</div>

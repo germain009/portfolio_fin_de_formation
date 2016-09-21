@@ -1,12 +1,12 @@
 <div class="total_historique">
 <div class="total_commande_tva">
-<P>Total tva <?= $total ?></P>
+<P>Total tva <?= $total ?> €</P>
+</div>
 </div>
 <div class="adresse_commande">
-<p>Adresse livraison</p>
 <?php
     require('apps/adresse_historique.php');
 ?>
 </div>
-</div>
+
 <hr>

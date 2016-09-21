@@ -49,19 +49,22 @@ class CommandeManager
 	{
             $commande = new Commande($this->link);
           
+                $date = new dateTime();
+                $date_commande = $date->format('Y-m-d H:i:s');
+                $commande->setDate($date_commande);
                 $commande->setIdUser($id_user);
                 $commande->setIdProduits($id_produits);
                 $commande->setNbrProduits($nbr_produits);
                 
                 
-		
+		$date_cmd = mysqli_real_escape_string($this->link,$commande->getDate());
 		$id_user = mysqli_real_escape_string($this->link,$commande->getIdUser());
                 $id_produits = mysqli_real_escape_string($this->link,$commande->getIdProduits());
                 $nbr_produits = mysqli_real_escape_string($this->link,$commande->getNbrProduits());
 		
 		$query="INSERT INTO commandes
-                        (id_user,id_produits,nbr_produits) 
-			VALUES ('".$id_user."','".$id_produits."','".$nbr_produits."')";
+                        (date,id_user,id_produits,nbr_produits) 
+			VALUES ('".$date_cmd."','".$id_user."','".$id_produits."','".$nbr_produits."')";
 		$res=mysqli_query($this->link,$query);
 		if(!$res)
 		{
@@ -73,22 +76,25 @@ class CommandeManager
         public function createDiferenteAdresse($id_user,$id_produits,$nbr_produits,$id_adresse)
 	{
             $commande = new Commande($this->link);
-          
+                  
+                $date = new dateTime();
+                $date_commande = $date->format('Y-m-d H:i:s');
+                $commande->setDate($date_commande);
                 $commande->setIdUser($id_user);
                 $commande->setIdProduits($id_produits);
                 $commande->setNbrProduits($nbr_produits);
                 $commande->setIdAdresse($id_adresse);
                 
                 
-		
+		$date_cmd = mysqli_real_escape_string($this->link,$commande->getDate());
 		$id_user = mysqli_real_escape_string($this->link,$commande->getIdUser());
                 $id_produits = mysqli_real_escape_string($this->link,$commande->getIdProduits());
                 $nbr_produits = mysqli_real_escape_string($this->link,$commande->getNbrProduits());
                 $id_adresse = mysqli_real_escape_string($this->link,$commande->getIdAdresse());
 		
 		$query="INSERT INTO commandes
-                        (id_user,id_produits,nbr_produits,id_adresse) 
-			VALUES ('".$id_user."','".$id_produits."','".$nbr_produits."',
+                        (date,id_user,id_produits,nbr_produits,id_adresse) 
+			VALUES ('".$date_cmd."','".$id_user."','".$id_produits."','".$nbr_produits."',
                                 '".$id_adresse."')";
 		$res=mysqli_query($this->link,$query);
 		if(!$res)

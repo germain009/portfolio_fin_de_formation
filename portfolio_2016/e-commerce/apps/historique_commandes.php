@@ -20,17 +20,8 @@ if(isset($_SESSION['pseudo']))
 			$manager_product = new ProductManager($link);
 			$prices = $manager_product->getInfosProduct($tbl);
 			$total = 0 ;
-			//boucle sur le tableau qui retourne les prix (total commande)
-			for($i = 0 ; $i < count($prices); $i ++)
-			{
-				$infos = $prices[$i];
-				$quantite = $qte[$i];
-				$total += ($infos->getPrix() * $quantite) + 
-				(($infos->getPrix() * $quantite) * 
-				$infos->getTva()  ) / 100 ;
-				require('views/infos_historique.phtml');
-			}
-			//recuperation de l'adresse
+			require('views/date_commande.phtml');
+		        require('apps/div_infos_historique.php');
 			require('views/historique_commandes.phtml');
 			$count ++ ;
 		}
